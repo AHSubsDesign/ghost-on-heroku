@@ -1,0 +1,102 @@
+.ActivityPanel-list {
+    padding-left: 0;
+    list-style: none
+}
+.row--no-gutter {
+    margin-left: 0;
+    margin-right: 0
+}
+
+.row--no-gutter>.col,
+.row--no-gutter>[class*=col-],
+.row--no-gutter>[class*=" col-"] {
+    padding-left: 0;
+    padding-right: 0
+}
+.Reveal {
+    opacity: 0;
+    -webkit-transform: translateY(30px);
+    -ms-transform: translateY(30px);
+    transform: translateY(30px);
+    -webkit-transition: opacity 1s, -webkit-transform 1s;
+    transition: opacity 1s, -webkit-transform 1s;
+    transition: opacity 1s, transform 1s;
+    transition: opacity 1s, transform 1s, -webkit-transform 1s
+}
+
+.Reveal--x {
+    -webkit-transform: translateX(30px) translateY(0);
+    -ms-transform: translateX(30px) translateY(0);
+    transform: translateX(30px) translateY(0)
+}
+
+.Reveal.is-shown {
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0)
+}
+.ActivityPanel {
+    position: relative
+}
+.ActivityPanel-body {
+    position: relative;
+    background-color: #fff;
+    z-index: 2;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem
+}
+.ActivityPanel-title {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    font-size: 14px;
+    line-height: 1.7;
+}
+.Background--dark .ActivityPanel-body {
+    background-color: #212121
+}
+
+.Background--darker .ActivityPanel-body {
+    background-color: #171717
+}
+
+@media(min-width:768px) {
+    .ActivityPanel-body {
+        padding-right: 2rem;
+        padding-left: 2rem;
+        padding-top: 4rem;
+        padding-bottom: 4rem
+    }
+}
+
+.ActivityPanel-title {
+    margin-top: 0!important
+}
+
+.ActivityPanel-text {
+    margin-top: 0!important;
+    color: #b1b1b1
+}
+
+.Background--dark .ActivityPanel-text,
+.Background--darker .ActivityPanel-text {
+    color: #595959
+}
+
+.ActivityPanel-list {
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 1;
+    margin-bottom: 0!important
+}
+
+.ActivityPanel-list li {
+    margin-bottom: .5em
+}
+
+.ActivityPanel-list li:last-child {
+    margin-bottom: 0
+}
